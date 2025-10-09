@@ -2,7 +2,6 @@ from staff_signup import ReadFile_fromJson
 from validate_functions import is_valid_email
 from validate_functions import is_valid_password
 import os,sys
-
 sys.path.append(os.getcwd())
 from colors import Colors
 
@@ -26,6 +25,7 @@ def Userlogin():
         for user in users:
             if user["email"] == Email and user["password"] == Password:
                 print(Colors.CYAN + Colors.BOLD + f"Welcome back, {user['name']}! Login successfull.\n" + Colors.RESET)
+                break
                 
             else:
                 print(Colors.RED + "Invalid email or password. Please try again.\n" + Colors.RESET)
