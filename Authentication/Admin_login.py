@@ -1,32 +1,50 @@
-import os,sys
 
-sys.path.append(os.getcwd())
-from colors import Colors
-from validate_functions import is_valid_email
-from validate_functions import is_valid_password
-from admindetails import ReadFile_fromJson
+import pwinput
+from Logs.registrationlogs import Writelogs
+from Model.colors import Colors
+from Model.admin_model import AdminModel
+from Validation.validate_functions import is_valid_email, is_valid_password
 
-def admin_login():
+class AdminLogin:
+    def __init__(self):
+        try:
+            self.model = AdminModel()
+            self.admins = self.model.get_all_admins()
+        except Exception as e:
+            Writelogs(str(e))
+            print(Colors.RED + "Error loading admin data. Please try again." + Colors.RESET)
+            self.admins = []
 
-    admins=ReadFile_fromJson()
+    def login(self):
+        try:
+            while True:
+                print(Colors.BLUE + Colors.BOLD + "\n\t===== ADMIN LOGIN =====\n" + Colors.RESET)
 
-    while(True):
-        print(Colors.GREEN + Colors.BOLD + "\n\t==== LOGIN ====\n" + Colors.RESET)
+                try:
+                    email = input("Please enter your email: ").strip()
+                    if not is_valid_email(email):
+                        raise ValueError("Invalid email format")
+                except Exception as e:
+                    Writelogs(str(e))
+                    print(Colors.RED + "Invalid email format! Try again.\n" + Colors.RESET)
+                    continue
 
-        Email=(input("Please enter your email: ").strip())
-        if not is_valid_email(Email):
-            print(Colors.RED + "\nInvalid email format! Please try again." + Colors.RESET)
-            continue
+                try:
+                    password = pwinput.pwinput("Please enter your Password: ", mask="*").strip()
+                    if len(password) < 8 or not is_valid_password(password):
+                        raise ValueError("Invalid Password Format")
+                except Exception as e:
+                    Writelogs(str(e))
+                    print(Colors.RED + "Password must be at least 8 digits long with letters and numbers!\n" + Colors.RESET)
+                    continue
 
-        Password=(input("Please enter your Password: ").strip())
-        if len(Password) < 8 or not is_valid_password(Password):
-            print(Colors.RED + "\nPassword must be at least 8 digits long with the mix of integers and alphabets" + Colors.RESET)
-            continue
+                for admin in self.admins:
+                    if admin["email"] == email and admin["password"] == password:
+                        print(Colors.GREEN + f"\nWelcome back, {admin['name']}! Login successful ✅\n" + Colors.RESET)
+                        return admin
 
-        for admin in admins:
-            if admin["email"] == Email and admin["password"] == Password:
-                print(Colors.CYAN + Colors.BOLD + f"Welcome back, {admin['name']}! Login successfull.\n" + Colors.RESET)
-                break
-                
-            else:
                 print(Colors.RED + "Invalid email or password. Please try again.\n" + Colors.RESET)
+
+        except Exception as e:
+            Writelogs(str(e))
+            print(Colors.RED + "An unexpected error occurred during login. Please try again." + Colors.RESET)

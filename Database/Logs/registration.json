@@ -1,0 +1,74 @@
+[
+  {
+    "ERROR": "invalid literal for int() with base 10: 'cls'",
+    "DATE / TIME": [
+      "27/10/2025 , 02:06 PM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "run",
+    "LINE": 66
+  },
+  {
+    "ERROR": "invalid literal for int() with base 10: 'yamini98'",
+    "DATE / TIME": [
+      "27/10/2025 , 10:26 PM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "run",
+    "LINE": 66
+  },
+  {
+    "ERROR": "invalid literal for int() with base 10: 'yamini980@gmail.com'",
+    "DATE / TIME": [
+      "27/10/2025 , 10:26 PM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "run",
+    "LINE": 66
+  },
+  {
+    "ERROR": "'AdminModel' object has no attribute 'get_all_admins'",
+    "DATE / TIME": [
+      "29/10/2025 , 06:45 AM"
+    ],
+    "MODULE": "Admin_login.py",
+    "FUNCTION": "__init__",
+    "LINE": 14
+  },
+  {
+    "ERROR": "invalid literal for int() with base 10: '& C:/Users/USER/AppData/Local/Programs/Python/Python310/python.exe \"d:/Github code/Indixpert-Python_Project_July2025-Restaurant--Zaika-e-Ghar/main.py\"'",
+    "DATE / TIME": [
+      "29/10/2025 , 06:59 AM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "run",
+    "LINE": 64
+  },
+  {
+    "ERROR": "Experience must be a positive number.",
+    "DATE / TIME": [
+      "29/10/2025 , 07:01 AM"
+    ],
+    "MODULE": "staff_signup.py",
+    "FUNCTION": "get_experience",
+    "LINE": 105
+  },
+  {
+    "ERROR": "MainMenu.display_menu() missing 1 required positional argument: 'self'",
+    "DATE / TIME": [
+      "29/10/2025 , 07:06 AM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "login_user",
+    "LINE": 54
+  },
+  {
+    "ERROR": "MainMenu.display_menu() missing 1 required positional argument: 'self'",
+    "DATE / TIME": [
+      "29/10/2025 , 07:13 AM"
+    ],
+    "MODULE": "UserAuth.py",
+    "FUNCTION": "login_user",
+    "LINE": 54
+  }
+]

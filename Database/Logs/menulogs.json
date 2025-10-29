@@ -1,0 +1,65 @@
+[
+  {
+    "ERROR": "'Price'",
+    "DATE / TIME": "27/10/2025 , 12:23 AM",
+    "MODULE": "orders.py",
+    "FUNCTION": "start_ordering",
+    "LINE": 254
+  },
+  {
+    "ERROR": "Expecting value: line 1 column 1 (char 0)",
+    "DATE / TIME": "27/10/2025 , 12:23 AM",
+    "MODULE": "orders.py",
+    "FUNCTION": "save_bill",
+    "LINE": 92
+  },
+  {
+    "ERROR": "generate_order_id error: Expecting value: line 1 column 1 (char 0)",
+    "DATE / TIME": "27/10/2025 , 12:23 AM",
+    "MODULE": "orders.py",
+    "FUNCTION": "generate_order_id",
+    "LINE": 80
+  },
+  {
+    "ERROR": "'Price'",
+    "DATE / TIME": "27/10/2025 , 12:24 AM",
+    "MODULE": "orders.py",
+    "FUNCTION": "start_ordering",
+    "LINE": 254
+  },
+  {
+    "ERROR": "[Errno 2] No such file or directory: 'D:\\\\Github code\\\\Indixpert-Python_Project_July2025-Restaurant--Zaika-e-Ghar\\\\Database\\\\registeredUsers.json'",
+    "DATE / TIME": "27/10/2025 , 02:12 PM",
+    "MODULE": "AdminMenu.py",
+    "FUNCTION": "admin_menu",
+    "LINE": 111
+  },
+  {
+    "ERROR": "'Price'",
+    "DATE / TIME": "28/10/2025 , 12:45 PM",
+    "MODULE": "orders.py",
+    "FUNCTION": "start_ordering",
+    "LINE": 288
+  },
+  {
+    "ERROR": "'Price'",
+    "DATE / TIME": "29/10/2025 , 07:08 AM",
+    "MODULE": "orders.py",
+    "FUNCTION": "start_ordering",
+    "LINE": 275
+  },
+  {
+    "ERROR": "TableReport.__init__() takes 1 positional argument but 2 were given",
+    "DATE / TIME": "29/10/2025 , 07:25 AM",
+    "MODULE": "AdminMenu.py",
+    "FUNCTION": "admin_menu",
+    "LINE": 166
+  },
+  {
+    "ERROR": "TableReport.__init__() takes 1 positional argument but 2 were given",
+    "DATE / TIME": "29/10/2025 , 07:27 AM",
+    "MODULE": "AdminMenu.py",
+    "FUNCTION": "admin_menu",
+    "LINE": 166
+  }
+]

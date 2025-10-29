@@ -1,102 +1,148 @@
-import json
-import os,sys
-sys.path.append(os.getcwd())
-from colors import Colors
-from validate_functions import is_valid_username
-from validate_functions import is_valid_email
-from validate_functions import is_email_registered
-from validate_functions import is_valid_password
-from validate_functions import is_valid_dob
-from validate_functions import is_valid_experience
-from validate_functions import is_valid_aadhar
 
-path=r"D:\Github code\Indixpert-Python_Project_July2025-Restaurant--Zaika-e-Ghar\Database\registeredUsers.json"
+import time
+import pwinput
+from Logs.registrationlogs import Writelogs
+from Model.colors import Colors
+from Model.staffModel import StaffModel
+from Validation.validate_functions import (
+    is_valid_username,
+    is_valid_email,
+    is_email_registered,
+    is_valid_password,
+    is_valid_dob,
+    is_valid_experience,
+    is_valid_aadhar
+)
 
-def ReadFile_fromJson(): 
-    try:
-        if not os.path.exists(path):
-            return [] 
-        with open(path, 'r') as file:
-            return json.loads(file.read())  
-    except (json.JSONDecodeError, ValueError):
-        print(Colors.RED + "Error reading JSON file. Resetting to empty list." + Colors.RESET)
-        return []
+class StaffSignup:
 
-def staff_Signup():
-    users = ReadFile_fromJson()
+    def __init__(self):
+        try:
+            self.model = StaffModel()
+            self.users = self.model.staff_list
+        except Exception as e:
+            Writelogs(f"Initialization error: {str(e)}")
+            print(Colors.RED + "Initialization failed. Please try again." + Colors.RESET)
+            self.users = []
 
-    print(Colors.GREEN + "\n\t===== STAFF SIGN UP =====\n" + Colors.RESET)
+    def get_name(self):
+        while True:
+            try:
+                name = input("Please enter your Name: ").strip().title()
+                if not is_valid_username(name):
+                    raise ValueError("Username must contain only letters.")
+                return name
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid name. Try again!\n" + Colors.RESET)
 
-    while True:
-        name = input("Please Enter your Name: ").strip().title()
-        if not is_valid_username(name):
-            print(Colors.RED + "Username must contain only letters. Try again!\n" + Colors.RESET)
-            continue
-        break 
+    def get_email(self):
+        while True:
+            try:
+                email = input("Please enter your Email ID: ").strip()
+                if not is_valid_email(email):
+                    raise ValueError("Invalid email format.")
+                if is_email_registered(email, self.users):
+                    print(Colors.RED + "Email already registered! Please login instead.\n" + Colors.RESET)
+                    return None
+                return email
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid email. Try again!\n" + Colors.RESET)
 
+    def get_password(self):
+        while True:
+            try:
+                password = pwinput.pwinput("Create your Password (alphanumeric, min 8 chars): ", mask="*").strip()
+                if len(password) < 8 or not is_valid_password(password):
+                    raise ValueError("Password must be at least 8 characters long and contain both letters and digits.")
+                confirmpassword = pwinput.pwinput("Confirm your Password: ", mask="*").strip()
+                if confirmpassword != password:
+                    raise ValueError("Passwords do not match.")
+                return password
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid password. Try again!\n" + Colors.RESET)
 
-    while True:
-        email = input("Please enter your Email ID: ").strip()
-        if not is_valid_email(email):
-            print(Colors.RED + "Invalid email format! Please try again.\n" + Colors.RESET)
-            continue
-        if is_email_registered(email, users):
-            print(Colors.RED + "Email already registered! Please login instead.\n" + Colors.RESET)
-            return 
-        break
+    def get_dob(self):
+        while True:
+            try:
+                dob = input("Enter your D.O.B. (DD/MM/YYYY): ").strip()
+                if not is_valid_dob(dob):
+                    raise ValueError("Invalid DOB format.")
+                return dob
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid DOB. Try again!\n" + Colors.RESET)
 
-    while True:
-        password = input("Create your Password (alphanumeric, min 8 chars): ").strip()
-        if len(password) < 8 or not is_valid_password(password):
-            print(Colors.RED + "Password must be at least 8 characters long and contain both letters and digits.\n" + Colors.RESET)
-            continue
-        confirmpassword = input("Confirm your password: ").strip()
-        if confirmpassword != password:
-            print(Colors.RED + "Passwords do not match. Please try again!\n" + Colors.RESET)
-            continue
-        break
+    def get_qualifications(self):
+        qualifications = []
+        while True:
+            try:
+                qualification = {}
+                qualification["qualification_name"] = input("Enter qualification name: ").strip().title()
+                year = input("Enter the year of this qualification: ").strip()
+                if not (year.isdigit() and len(year) == 4):
+                    raise ValueError("Year must be a 4-digit number.")
+                qualification["year"] = int(year)
+                qualifications.append(qualification)
+                more = input("Add another qualification? (yes/no): ").strip().lower()
+                if more != "yes":
+                    break
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid qualification data. Try again!\n" + Colors.RESET)
+        return qualifications
 
-    while True:
-        dob = input("Enter your D.O.B. (DD/MM/YYYY): ").strip()
-        if not is_valid_dob(dob):
-            print(Colors.RED + "Invalid DOB format! Please use DD/MM/YYYY.\n" + Colors.RESET)
-            continue
-        break
+    def get_experience(self):
+        while True:
+            try:
+                experience = input("Please enter your experience in years: ").strip()
+                if not is_valid_experience(experience):
+                    raise ValueError("Experience must be a positive number.")
+                return experience
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid experience. Try again!\n" + Colors.RESET)
 
-    while True:
-        max_qualification = input("Please enter your Max Qualification: ").strip()
-        if not max_qualification:
-            print(Colors.RED + "Qualification cannot be empty.\n" + Colors.RESET)
-            continue
-        break
+    def get_aadhar(self):
+        while True:
+            try:
+                aadhar = input("Enter your 12-digit Aadhar number: ").strip()
+                if not is_valid_aadhar(aadhar):
+                    raise ValueError("Aadhar must be exactly 12 digits.")
+                return aadhar
+            except Exception as e:
+                Writelogs(str(e))
+                print(Colors.RED + "Invalid Aadhar. Try again!\n" + Colors.RESET)
 
-    while True:
-        experience = input("Please enter your experience in years: ").strip()
-        if not is_valid_experience(experience):
-            print(Colors.RED + "Experience must be a positive number.\n" + Colors.RESET)
-            continue
-        break
+    def signup(self):
+        try:
+            print(Colors.GREEN + Colors.BOLD + "\n\t===== STAFF SIGN UP =====\n" + Colors.RESET)
+            name = self.get_name()
+            email = self.get_email()
+            if not email:
+                return
+            password = self.get_password()
+            dob = self.get_dob()
+            qualifications = self.get_qualifications()
+            experience = self.get_experience()
+            aadhar = self.get_aadhar()
 
-    while True:
-        aadhar = input("Enter your 12-digit Aadhar number: ").strip()
-        if not is_valid_aadhar(aadhar):
-            print(Colors.RED + "Aadhar must be exactly 12 digits.\n" + Colors.RESET)
-            continue
-        break
-    print(Colors.GREEN + "\n\tRegistration Successfully Completed! You can now Login." + Colors.RESET)
+            new_staff = {
+                "username": name,
+                "email": email,
+                "password": password,
+                "qualification": qualifications,
+                "experience": int(experience),
+                "dob": dob,
+                "aadhar": aadhar,
+                "role": "STAFF"
+            }
 
-    users.append({
-        "username": name,
-        "email": email,
-        "password": password,
-        "max_qualification": max_qualification,
-        "experience": int(experience),
-        "dob": dob,
-        "aadhar": aadhar
-    })
-
-    with open(path,'w') as file:
-
-        staffdata=json.dumps(users,indent=2)
-        file.write(staffdata)
-
+            self.model.add_staff(new_staff)
+            time.sleep(2)
+            print(Colors.GREEN + "\n\tRegistration Successfully Completed! You can now Login." + Colors.RESET)
+        except Exception as e:
+            Writelogs(str(e))
+            print(Colors.RED + "An unexpected error occurred during signup. Please try again." + Colors.RESET)

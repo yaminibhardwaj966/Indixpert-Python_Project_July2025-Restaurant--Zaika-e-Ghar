@@ -1,0 +1,55 @@
+[
+  {
+    "username": "Yamini",
+    "email": "yamini123@gmail.com",
+    "password": "12345678ya",
+    "qualification": [
+      {
+        "qualification_name": "10",
+        "year": 2023
+      },
+      {
+        "qualification_name": "12",
+        "year": 2025
+      }
+    ],
+    "experience": "Fresher",
+    "dob": "23/08/2007",
+    "aadhar": "123456789098",
+    "role": "STAFF"
+  },
+  {
+    "username": "Yati",
+    "email": "yati123@gmail.com",
+    "password": "12345678ya",
+    "qualification": [
+      {
+        "qualification_name": "10",
+        "year": 2023
+      }
+    ],
+    "experience": 2025,
+    "dob": "23/08/2007",
+    "aadhar": "123456789098",
+    "role": "STAFF"
+  },
+  {
+    "username": "Tushar",
+    "email": "tushar123@gmail.com",
+    "password": "1234tush",
+    "qualification": [
+      {
+        "qualification_name": "8Th",
+        "year": 2024
+      },
+      {
+        "qualification_name": "9Th",
+        "year": 2025
+      }
+    ],
+    "experience": 1,
+    "dob": "16/08/2010",
+    "aadhar": "789876789098",
+    "role": "STAFF"
+  }
+]

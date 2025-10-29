@@ -1,0 +1,125 @@
+{
+  "tables": [],
+  "bookings": [
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "11:00-12:00",
+      "table_id": "T03",
+      "seats_booked": 5,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "12:00-14:00",
+      "table_id": "T03",
+      "seats_booked": 5,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "11:00-12:00",
+      "table_id": "T02",
+      "seats_booked": 4,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "12:00-14:00",
+      "table_id": "T02",
+      "seats_booked": 4,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "14:00-16:00",
+      "table_id": "T02",
+      "seats_booked": 4,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "16:00-18:00",
+      "table_id": "T02",
+      "seats_booked": 4,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "11:00-12:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "12:00-14:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "14:00-16:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "partial"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8798989098",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "16:00-18:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "booked"
+    },
+    {
+      "name": "Yamini",
+      "contact": "8987876560",
+      "date": "2025-10-30",
+      "slot": "breakfast",
+      "time": "08:00-09:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "booked"
+    },
+    {
+      "name": "Yamini",
+      "contact": "9809878909",
+      "date": "2025-10-29",
+      "slot": "lunch",
+      "time": "11:00-12:00",
+      "table_id": "T01",
+      "seats_booked": 2,
+      "status": "booked"
+    }
+  ]
+}

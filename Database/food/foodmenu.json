@@ -1,0 +1,1035 @@
+{
+  "restaurant": {
+    "name": "Zaika-e-Ghar",
+    "tagline": "Taste the Flavors of India",
+    "sections": [
+      {
+        "title": "🍽️  Breakfast Specials 🍽️",
+        "categories": [
+          {
+            "name": "🥪 Sandwiches Corner",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price"
+            ],
+            "items": [
+              {
+                "id": "01",
+                "name": "Veg Sandwich",
+                "price": "99/-"
+              },
+              {
+                "id": "02",
+                "name": "Butter Toast Sandwich",
+                "price": "139/-"
+              },
+              {
+                "id": "03",
+                "name": "Veg Cheese Toast Sandwich",
+                "price": "139/-"
+              },
+              {
+                "id": "04",
+                "name": "Masala Grilled Sandwich",
+                "price": "169/-"
+              },
+              {
+                "id": "05",
+                "name": "Veg Cheese Grilled Sandwich",
+                "price": "169/-"
+              },
+              {
+                "id": "06",
+                "name": "Aloo Cheese Chutney Toast Sandwich",
+                "price": "119/-"
+              },
+              {
+                "id": "07",
+                "name": "Cheese Chilli Toast Sandwich",
+                "price": "120/-"
+              },
+              {
+                "id": "08",
+                "name": "Club Sandwich",
+                "price": "120/-"
+              },
+              {
+                "id": "09",
+                "name": "Cheese Chilli Toast Sandwich",
+                "price": "120/-"
+              }
+            ]
+          },
+          {
+            "name": "🫓  Paratha Corner",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Half",
+              "Full"
+            ],
+            "items": [
+              {
+                "id": "10",
+                "name": "Aloo Paratha With Butter",
+                "half": "40/-",
+                "full": "80/-"
+              },
+              {
+                "id": "11",
+                "name": "Aloo Pyaaz Paratha",
+                "half": "40/-",
+                "full": "75/-"
+              },
+              {
+                "id": "12",
+                "name": "Gobhi Paratha",
+                "half": "50/-",
+                "full": "95/-"
+              },
+              {
+                "id": "13",
+                "name": "Paneer Paratha",
+                "half": "75/-",
+                "full": "140/-"
+              },
+              {
+                "id": "14",
+                "name": "Cheese Paratha",
+                "half": "60/-",
+                "full": "110/-"
+              },
+              {
+                "id": "15",
+                "name": "Mix Veg Paratha",
+                "half": "90/-",
+                "full": "175/-"
+              }
+            ]
+          },
+          {
+            "name": "🥥 South Indian Snacks",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price"
+            ],
+            "items": [
+              {
+                "id": "16",
+                "name": "Idli Chutney Sambhar",
+                "price": "60/-"
+              },
+              {
+                "id": "17",
+                "name": "Plain Dosa",
+                "price": "70/-"
+              },
+              {
+                "id": "18",
+                "name": "Masala Dosa",
+                "price": "90/-"
+              },
+              {
+                "id": "19",
+                "name": "Mysore Masala Dosa",
+                "price": "100/-"
+              },
+              {
+                "id": "20",
+                "name": "Medu Vada",
+                "price": "50/-"
+              },
+              {
+                "id": "21",
+                "name": "Batata Vada",
+                "price": "50/-"
+              },
+              {
+                "id": "22",
+                "name": "Mix Veg Uttappa",
+                "price": "80/-"
+              }
+            ]
+          },
+          {
+            "name": "🥘 North Indian Snacks",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price"
+            ],
+            "items": [
+              {
+                "id": "23",
+                "name": "Chhole Bhature",
+                "price": "70/-"
+              },
+              {
+                "id": "24",
+                "name": "Pao Bhaji",
+                "price": "60/-"
+              },
+              {
+                "id": "25",
+                "name": "Paneer Pakora",
+                "price": "30/-"
+              },
+              {
+                "id": "26",
+                "name": "Veg Pakora",
+                "price": "35/-"
+              },
+              {
+                "id": "27",
+                "name": "Extra Bhatura",
+                "price": "20/-"
+              },
+              {
+                "id": "28",
+                "name": "Bread Pakora",
+                "price": "40/-"
+              },
+              {
+                "id": "29",
+                "name": "Vada Pao",
+                "price": "35/-"
+              },
+              {
+                "id": "30",
+                "name": "Special Vada Pao",
+                "price": "50/-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🍛 Lunch Combos 🍛",
+        "categories": [
+          {
+            "name": "🥗 Gravy Corner",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Half",
+              "Full"
+            ],
+            "items": [
+              {
+                "id": "31",
+                "name": "Dal Tadka",
+                "half": "70/-",
+                "full": "129/-"
+              },
+              {
+                "id": "32",
+                "name": "Dal Makhni",
+                "half": "90/-",
+                "full": "179/-"
+              },
+              {
+                "id": "33",
+                "name": "Paneer Tikka Butter Masala",
+                "half": "135/-",
+                "full": "275/-"
+              },
+              {
+                "id": "34",
+                "name": "Kashmiri Kofta",
+                "half": "99/-",
+                "full": "199/-"
+              },
+              {
+                "id": "35",
+                "name": "Paneer Lababdar",
+                "half": "119/-",
+                "full": "239/-"
+              },
+              {
+                "id": "36",
+                "name": "Kadhai Paneer",
+                "half": "119/-",
+                "full": "189/-"
+              },
+              {
+                "id": "37",
+                "name": "Malai Kofta",
+                "half": "119/-",
+                "full": "230/-"
+              },
+              {
+                "id": "38",
+                "name": "Palak Paneer",
+                "half": "119/-",
+                "full": "189/-"
+              },
+              {
+                "id": "39",
+                "name": "Mushroom Masala",
+                "half": "119/-",
+                "full": "190/-"
+              },
+              {
+                "id": "40",
+                "name": "Mushroom Chilli",
+                "half": "119/-",
+                "full": "210/-"
+              },
+              {
+                "id": "41",
+                "name": "Mix Veg",
+                "half": "119/-",
+                "full": "170/-"
+              },
+              {
+                "id": "42",
+                "name": "Channa Masala",
+                "half": "119/-",
+                "full": "139/-"
+              }
+            ]
+          },
+          {
+            "name": "🫓  Naan / Roti Corner",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Qty(1 Pc)",
+              "Qty(2 Pc)"
+            ],
+            "items": [
+              {
+                "id": "43",
+                "name": "Tawa Roti",
+                "Qty(1 Pc)": "15/-",
+                "Qty(2 Pc)": "30/-"
+              },
+              {
+                "id": "44",
+                "name": "Tandoori Roti",
+                "Qty(1 Pc)": "20/-",
+                "Qty(2 Pc)": "40/-"
+              },
+              {
+                "id": "45",
+                "name": "Plain Naan",
+                "Qty(1 Pc)": "15/-",
+                "Qty(2 Pc)": "30/-"
+              },
+              {
+                "id": "46",
+                "name": "Butter Naan",
+                "Qty(1 Pc)": "20/-",
+                "Qty(2 Pc)": "40/-"
+              },
+              {
+                "id": "47",
+                "name": "Missi Roti",
+                "Qty(1 Pc)": "30/-",
+                "Qty(2 Pc)": "60/-"
+              },
+              {
+                "id": "48",
+                "name": "Paneer Naan",
+                "Qty(1 Pc)": "25/-",
+                "Qty(2 Pc)": "50/-"
+              },
+              {
+                "id": "49",
+                "name": "Garlic Naan",
+                "Qty(1 Pc)": "20/-",
+                "Qty(2 Pc)": "40/-"
+              },
+              {
+                "id": "50",
+                "name": "Lachha Paratha",
+                "Qty(1 Pc)": "15/-",
+                "Qty(2 Pc)": "30/-"
+              },
+              {
+                "id": "51",
+                "name": "Onion Kulcha",
+                "Qty(1 Pc)": "20/-",
+                "Qty(2 Pc)": "40/-"
+              }
+            ]
+          },
+          {
+            "name": "🍚 Rice Corner",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Half",
+              "Full"
+            ],
+            "items": [
+              {
+                "id": "52",
+                "name": "Plain Rice",
+                "half": "40/-",
+                "full": "80/-"
+              },
+              {
+                "id": "53",
+                "name": "Jeera Rice",
+                "half": "50/-",
+                "full": "99/-"
+              },
+              {
+                "id": "54",
+                "name": "Veg Pulao",
+                "half": "70/-",
+                "full": "139/-"
+              },
+              {
+                "id": "55",
+                "name": "Matar Pulao",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "56",
+                "name": "Kashmiri Pulao",
+                "half": "90/-",
+                "full": "180/-"
+              },
+              {
+                "id": "57",
+                "name": "Curd Rice",
+                "half": "70/-",
+                "full": "139/-"
+              },
+              {
+                "id": "58",
+                "name": "Veg Biryani",
+                "half": "100/-",
+                "full": "200/-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🍴  Dinner Delights 🍴",
+        "categories": [
+          {
+            "name": "🍱 Veg Thali Combos",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Serve for 1",
+              "Serve for 2"
+            ],
+            "items": [
+              {
+                "id": "59",
+                "name": "Mix Veg + 2 Lachha Paratha + Appetizers",
+                "Serve for 1": "149/-",
+                "Serve for 2": "299/-"
+              },
+              {
+                "id": "60",
+                "name": "Paneer Butter Masala + 2 Lachha Paratha + Appetizers",
+                "Serve for 1": "169/-",
+                "Serve for 2": "319/-"
+              },
+              {
+                "id": "61",
+                "name": "Kadhai Paneer + 2 Butter Naan + Appetizers",
+                "Serve for 1": "179/-",
+                "Serve for 2": "339/-"
+              },
+              {
+                "id": "62",
+                "name": "Dal Fry + Mix veg + 3 Tawa Roti + Appetizers",
+                "Serve for 1": "159/-",
+                "Serve for 2": "319/-"
+              },
+              {
+                "id": "63",
+                "name": "Paneer Masala + Jeera Rice + Salad",
+                "Serve for 1": "99/-",
+                "Serve for 2": "200/-"
+              },
+              {
+                "id": "64",
+                "name": "Chhole + Jeera Rice + Appetizers",
+                "Serve for 1": "99/-",
+                "Serve for 2": "199/-"
+              },
+              {
+                "id": "65",
+                "name": "Special Rajasthani Veg Thali",
+                "Serve for 1": "399/-",
+                "Serve for 2": "799/-"
+              }
+            ]
+          },
+          {
+            "name": "🍲 Special Curries",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Half",
+              "Full"
+            ],
+            "items": [
+              {
+                "id": "66",
+                "name": "Dal Fry",
+                "half": "70/-",
+                "full": "140/-"
+              },
+              {
+                "id": "67",
+                "name": "Dal Tadka",
+                "half": "70/-",
+                "full": "140/-"
+              },
+              {
+                "id": "68",
+                "name": "Mix Veg Kofta",
+                "half": "80/-",
+                "full": "160/-"
+              },
+              {
+                "id": "69",
+                "name": "Baby Corn Masala",
+                "half": "70/-",
+                "full": "140/-"
+              },
+              {
+                "id": "70",
+                "name": "Shahi Paneer",
+                "half": "130/-",
+                "full": "260/-"
+              },
+              {
+                "id": "71",
+                "name": "Afghani Paneer Tikka",
+                "half": "130/-",
+                "full": "260/-"
+              },
+              {
+                "id": "72",
+                "name": "Gobhi Aloo Kashmiri",
+                "half": "110/-",
+                "full": "220/-"
+              },
+              {
+                "id": "73",
+                "name": "Dam Aloo Masalaedar",
+                "half": "130/-",
+                "full": "260/-"
+              },
+              {
+                "id": "74",
+                "name": "Dal Dhaba ",
+                "half": "105/-",
+                "full": "210/-"
+              },
+              {
+                "id": "75",
+                "name": "Kadhai Chhole",
+                "half": "70/-",
+                "full": "140/-"
+              },
+              {
+                "id": "76",
+                "name": "Jeera Aloo",
+                "half": "100/-",
+                "full": "200/-"
+              },
+              {
+                "id": "77",
+                "name": "Methi Malai Matar",
+                "half": "130/-",
+                "full": "260/-"
+              },
+              {
+                "id": "78",
+                "name": "Gobhi Masala",
+                "half": "110/-",
+                "full": "220/-"
+              }
+            ]
+          },
+          {
+            "name": "🍛 North Indian Special",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Half",
+              "Full"
+            ],
+            "items": [
+              {
+                "id": "79",
+                "name": "Kaju Masala",
+                "half": "80/-",
+                "full": "160/-"
+              },
+              {
+                "id": "80",
+                "name": "Veg Kadhai",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "81",
+                "name": "Veg Kolhapuri",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "82",
+                "name": "Veg Hyderabadi",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "83",
+                "name": "Capsicum Masala",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "84",
+                "name": "Tomato Curry",
+                "half": "60/-",
+                "full": "120/-"
+              },
+              {
+                "id": "85",
+                "name": "Daal Kolhapuri",
+                "half": "50/-",
+                "full": "100/-"
+              },
+              {
+                "id": "86",
+                "name": "Paneer Tikka Masala",
+                "half": "80/-",
+                "full": "160/-"
+              },
+              {
+                "id": "87",
+                "name": "Mushroom Tikka Masala",
+                "half": "80/-",
+                "full": "160/-"
+              },
+              {
+                "id": "88",
+                "name": "Baby Corn Tikka Masala",
+                "half": "70/-",
+                "full": "140/-"
+              },
+              {
+                "id": "89",
+                "name": "Plain Palak",
+                "half": "50/-",
+                "full": "100/-"
+              }
+            ]
+          },
+          {
+            "name": "🔥 Tandoori Breads",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(2 Pcs)"
+            ],
+            "items": [
+              {
+                "id": "90",
+                "name": "Lachha Paratha",
+                "Price(2 Pcs)": "50"
+              },
+              {
+                "id": "91",
+                "name": "Butter Roti",
+                "Price(2 Pcs)": "30"
+              },
+              {
+                "id": "92",
+                "name": "Kulcha",
+                "Price(2 Pcs)": "40"
+              },
+              {
+                "id": "93",
+                "name": "Butter Kulcha",
+                "Price(2 Pcs)": "50"
+              },
+              {
+                "id": "94",
+                "name": "Butter Naan",
+                "Price(2 Pcs)": "40"
+              },
+              {
+                "id": "95",
+                "name": "Butter Parota",
+                "Price(2 Pcs)": "30"
+              },
+              {
+                "id": "96",
+                "name": "Veg Stuffed Parota",
+                "Price(2 Pcs)": "50"
+              },
+              {
+                "id": "97",
+                "name": "Veg Stuffed",
+                "Price(2 Pcs)": "60"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🥂 Drinks Menu 🥂",
+        "categories": [
+          {
+            "name": "🧃 Fresh Fruit Juices",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(1 glass)"
+            ],
+            "items": [
+              {
+                "id": "98",
+                "name": "Orange Juice",
+                "price": "30/-"
+              },
+              {
+                "id": "99",
+                "name": "Watermelon Juice",
+                "price": "35/-"
+              },
+              {
+                "id": "100",
+                "name": "Apple Juice",
+                "price": "50/-"
+              },
+              {
+                "id": "101",
+                "name": "Mango Juice",
+                "price": "40/-"
+              },
+              {
+                "id": "102",
+                "name": "Pineapple Juice",
+                "price": "40/-"
+              },
+              {
+                "id": "103",
+                "name": "Sweet Lime Juice",
+                "price": "50/-"
+              },
+              {
+                "id": "104",
+                "name": "Seasonal Fruit Blend",
+                "price": "80/-"
+              }
+            ]
+          },
+          {
+            "name": "🧋  Milkshakes",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(1 glass)"
+            ],
+            "items": [
+              {
+                "id": "105",
+                "name": "Banana Milkshake",
+                "price": "50/-"
+              },
+              {
+                "id": "106",
+                "name": "Chocolate Milkshake",
+                "price": "70/-"
+              },
+              {
+                "id": "107",
+                "name": "Butterscotch Milkshake",
+                "price": "60/-"
+              },
+              {
+                "id": "108",
+                "name": "Apple Milkshake",
+                "price": "60/-"
+              },
+              {
+                "id": "109",
+                "name": "Vanilla Milkshake",
+                "price": "60/-"
+              },
+              {
+                "id": "110",
+                "name": "Strawberry Milkshake",
+                "price": "60/-"
+              },
+              {
+                "id": "111",
+                "name": "Pista Milkshake",
+                "price": "60/-"
+              }
+            ]
+          },
+          {
+            "name": "☕ Hot Beverages",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(1 cup)"
+            ],
+            "items": [
+              {
+                "id": "112",
+                "name": "Masala Chai (Special House Blend)",
+                "price": "40/-"
+              },
+              {
+                "id": "113",
+                "name": "Ginger Lemon Tea",
+                "price": "40/-"
+              },
+              {
+                "id": "114",
+                "name": "Tulsi Green Tea",
+                "price": "40/-"
+              },
+              {
+                "id": "115",
+                "name": "Filter Coffee",
+                "price": "50/-"
+              },
+              {
+                "id": "116",
+                "name": "Cappucino",
+                "price": "60/-"
+              },
+              {
+                "id": "117",
+                "name": "Hot Chocolate",
+                "price": "70/-"
+              }
+            ]
+          },
+          {
+            "name": "🍹 Mocktails & Special Drinks",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(1 glass)"
+            ],
+            "items": [
+              {
+                "id": "118",
+                "name": "Virgin Mojito",
+                "price": "50/-"
+              },
+              {
+                "id": "119",
+                "name": "Blue Lagoon",
+                "price": "70/-"
+              },
+              {
+                "id": "120",
+                "name": "Strawberry Punch",
+                "price": "60/-"
+              },
+              {
+                "id": "121",
+                "name": "Watermelon Cooler",
+                "price": "60/-"
+              },
+              {
+                "id": "122",
+                "name": "Mint Lemon Fizz",
+                "price": "60/-"
+              },
+              {
+                "id": "123",
+                "name": "Aam Panna",
+                "price": "50/-"
+              },
+              {
+                "id": "124",
+                "name": "Jaljira",
+                "price": "30/-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🍸 Thanda Special 🥶",
+        "categories": [
+          {
+            "name": "❄️   Cold Beverages",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(1 glass)"
+            ],
+            "items": [
+              {
+                "id": "125",
+                "name": "Cold Coffee with Ice Cream",
+                "price": "80/-"
+              },
+              {
+                "id": "126",
+                "name": "Iced Tea (Lemon / Peach)",
+                "price": "70/-"
+              },
+              {
+                "id": "127",
+                "name": "Fresh Lime Soda (Sweet / Salted)",
+                "price": "60/-"
+              },
+              {
+                "id": "128",
+                "name": "Lassi (Sweet / Salted / Mango)",
+                "price": "50/-"
+              },
+              {
+                "id": "129",
+                "name": "Buttermilk (Masala / Plain)",
+                "price": "70/-"
+              }
+            ]
+          },
+          {
+            "name": "🍦 Ice Creams",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(per serving)"
+            ],
+            "items": [
+              {
+                "id": "130",
+                "name": "Butterscoth",
+                "price": "40/-"
+              },
+              {
+                "id": "131",
+                "name": "Strawberry",
+                "price": "50/-"
+              },
+              {
+                "id": "132",
+                "name": "Pista",
+                "price": "70/-"
+              },
+              {
+                "id": "133",
+                "name": "Chocolate",
+                "price": "50/-"
+              },
+              {
+                "id": "134",
+                "name": "Vanilla",
+                "price": "50/-"
+              },
+              {
+                "id": "135",
+                "name": "Mango",
+                "price": "50/-"
+              },
+              {
+                "id": "136",
+                "name": "Casatta",
+                "price": "60/-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "🍰 Desserts 🍰",
+        "categories": [
+          {
+            "name": "🍨 Indian Desserts",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(per serving)"
+            ],
+            "items": [
+              {
+                "id": "137",
+                "name": "Gulab Jamun (2 pcs)",
+                "price": "99/-"
+              },
+              {
+                "id": "138",
+                "name": "Rasgulla (2 pcs)",
+                "price": "110/-"
+              },
+              {
+                "id": "139",
+                "name": "Jalebi",
+                "price": "90/-"
+              },
+              {
+                "id": "140",
+                "name": "Kesar Rasmalai (2 pcs)",
+                "price": "150/-"
+              },
+              {
+                "id": "141",
+                "name": "Gajar Halwa",
+                "price": "130/-"
+              },
+              {
+                "id": "142",
+                "name": "Moong Dal Halwa",
+                "price": "140/-"
+              }
+            ]
+          },
+          {
+            "name": "🍧 Modern Treats",
+            "columns": [
+              "Item ID",
+              "Item Name",
+              "Price(per serving)"
+            ],
+            "items": [
+              {
+                "id": "143",
+                "name": "Chocolate Brownie with Ice Cream",
+                "price": "180/-"
+              },
+              {
+                "id": "144",
+                "name": "Matka Kulfi",
+                "price": "120/-"
+              },
+              {
+                "id": "145",
+                "name": "Mango Delight",
+                "price": "140/-"
+              },
+              {
+                "id": "146",
+                "name": "Rabri Falooda",
+                "price": "160/-"
+              },
+              {
+                "id": "147",
+                "name": "Ice Cream Sundae",
+                "price": "170/-"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
